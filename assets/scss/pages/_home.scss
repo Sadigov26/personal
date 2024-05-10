@@ -1,0 +1,420 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerHeader {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        ul {
+            display: flex;
+            gap: 20px;
+
+            li {
+                display: flex;
+
+                a {
+                    color: rgb(119, 119, 119);
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "Poppins";
+
+                    &:hover {
+                        color: rgb(98, 149, 221);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.navbarHeader ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarHeader ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbarHeader ul li:hover .submenu {
+    display: block;
+}
+
+.navbarHeader ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 120px;
+    top: 20px;
+}
+
+.navbarHeader ul li .submenu li {
+    display: block;
+}
+
+.navbarHeader ul li .submenu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbarHeader ul li .submenu li a:hover {
+    color: rgb(98, 149, 221);
+}
+
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9FF;
+
+    .containerHero {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+
+        .containerDesk {
+            display: flex;
+            gap: 15px;
+            width: 50%;
+            flex-direction: column;
+
+            h2 {
+                font-size: 18px;
+                font-weight: 400;
+                color: rgb(119, 119, 119);
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 600;
+                color: rgb(0, 0, 0);
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                color: rgb(119, 119, 119);
+            }
+
+            button {
+                padding: 10px;
+                width: 30%;
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                background-color: #8095FE;
+                border: none;
+
+                &:hover {
+                    background-color: #687bde;
+                }
+            }
+        }
+
+    }
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #FFFFFF;
+}
+
+.containerAbout {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.containerAboutDesk {
+    display: flex;
+    gap: 15px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.containerAboutDesk h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+
+.containerAboutDesk h1 {
+    font-size: 47px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.containerAboutDesk p {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(119, 119, 119);
+}
+
+.containerAboutDesk button {
+    padding: 10px;
+    width: 30%;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #8095FE;
+    border: none;
+}
+
+.containerAboutDesk button:hover {
+    background-color: #687bde;
+}
+
+.containerAboutImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+
+}
+
+.containerCart {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.containerTop {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 300;
+        color: rgb(119, 119, 119);
+    }
+}
+
+.containerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    text-align: center;
+    transition: 0.6s;
+    padding: 20px;
+
+    &:hover {
+
+        h2,
+        i {
+            color: #8095FE;
+            transition: 0.6s;
+        }
+    }
+}
+
+
+
+.product h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    transition: 0.6s;
+    font-size: 20px;
+}
+
+.product p {
+    font-size: 12px;
+    transition: 0.6s;
+    margin-top: 20px;
+    color: rgb(119, 119, 119);
+}
+
+.product i {
+    font-size: 36px;
+    color: #000000;
+}
+
+#person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #65B9FC;
+    color: white;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.containerPerson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.containerPerson>div {
+    text-align: center;
+    padding: 20px;
+}
+
+.containerPerson>div h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.containerPerson>div p {
+    font-size: 14px;
+}
+
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    header {
+        max-width: 100%;
+
+        li {
+            a {
+                display: none;
+            }
+        }
+
+        .fa-bars {
+            display: block;
+        }
+
+    }
+
+    #hero {
+        .containerHero {
+            flex-direction: column;
+            max-width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+
+            .containerDesk {
+                h1 {
+                    font-size: 39px;
+                }
+
+                width: 100%;
+
+                button {
+                    width: 150px;
+                }
+            }
+
+            .containerImg {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #about .containerAbout {
+        flex-direction: column;
+        max-width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #about .containerAboutDesk {
+        width: 100%;
+    }
+
+    #about .containerAboutDesk {
+        p {
+            font-size: 10px;
+        }
+    }
+
+    #about .containerAboutDesk h1 {
+        font-size: 33px;
+
+    }
+
+    #about .containerAboutDesk button {
+        width: 150px;
+    }
+
+    #cart {
+        background-color: #333;
+        width: 100%;
+        min-height: 100vh;
+
+        .containerCart,
+        .containerBottom,
+        .product {
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+
+        .product {
+            width: 80%;
+        }
+    }
+
+    #person {
+
+        .containerPerson {
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
